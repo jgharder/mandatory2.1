@@ -8,6 +8,8 @@ const client = await MongoClient.connect(url);
 
 const db = client.db(dbName);
 
+console.log("Connected to MongoDB");
+
 export default{
     users: db.collection("users")
 }

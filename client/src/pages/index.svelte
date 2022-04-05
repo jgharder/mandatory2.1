@@ -1,8 +1,8 @@
 <script>
   import { onMount } from "svelte";
-let nt;
-let nw;
-let root;
+  let nt;
+  let nw;
+  let root;
   onMount(() => {
     const navToggle = root.querySelector(".nav__toggle");
     const navWrapper = root.querySelector(".nav__wrapper");
@@ -28,15 +28,11 @@ let root;
   </head>
   <body>
     <!-- Header Start -->
-    <header class="site-header" >
-      <div class="site-header__top" >
+    <header class="site-header">
+      <div class="site-header__top">
         <div class="wrapper site-header__wrapper top">
           <nav class="nav" bind:this={root}>
-            <button
-              class="nav__toggle"
-              aria-expanded="false"
-              type="button"
-            >
+            <button class="nav__toggle" aria-expanded="false" type="button">
               menu
             </button>
             <ul class="nav__wrapper">

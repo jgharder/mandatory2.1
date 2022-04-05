@@ -5,15 +5,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createDb": "node ./database/seedDb.js",
+    "deleteDb": "node ./database/deleteDb.js",
+    "start-dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
-    "sqlite": "^4.0.25",
-    "sqlite3": "^5.0.2"
+    "express-rate-limit": "^6.3.0",
+    "express-session": "^1.17.2",
+    "helmet": "^5.0.2",
+    "mongodb": "^4.5.0"
   }
 }
